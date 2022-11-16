@@ -1,0 +1,212 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 70vmin !important;
+  /* width: 50% !important; */
+  pointer-events: none;
+}
+
+.main-image{
+  width: 100% !important;
+  height: 100% !important;
+  background: transparent !important;
+}
+
+
+.why-tvd{
+  background-color: #e5e6ea;
+  border-radius: 20px 120px 20px 120px;
+  /* height: 500px;
+  width: 100%; */
+}
+
+.why-tvd-text{
+  /* -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important; */
+    color: #21242c !important;
+    /* display: block !important; */
+    font-family: 'Source Serif Pro', 'Noto Serif', serif !important;
+    font-size: 30px !important;
+    font-weight: 600 !important;
+    line-height: 35px !important;
+    letter-spacing: -0.1px !important;
+    margin: 10px auto 0 !important;
+    padding: 40px 0 40px !important;
+    text-align: center !important;
+    max-width: 800px !important;
+}
+
+@media screen and (min-width: 768px){
+.why-tvd-text {
+    font-size: 44px !important;
+    line-height: 48px !important;
+}
+.row-reverse{
+  flex-direction: row-reverse!important;
+}
+.why-img{
+  height: 10vmin !important;
+}
+}
+
+
+.why-tvd-content{
+  margin-bottom: 30px;
+}
+
+.why-img{
+  height: 20vmin !important;
+}
+
+
+.why-head{
+  font-family: 'Source Serif Pro', 'Noto Serif', serif !important;
+    font-size: 25px !important;
+    font-weight: 400 !important;
+    line-height: 30px !important;
+    letter-spacing: -0.1px !important;
+    margin: 0 0 20px 0 !important;
+}
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
+.main-heading{
+  font-family: 'Source Serif Pro', 'Noto Serif', serif !important;
+  font-weight: 600 !important;
+  font-size: calc(1.300rem + 1.5vw) !important;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.navbar-brand {
+  padding-top: var(--bs-navbar-brand-padding-y);
+  padding-bottom: var(--bs-navbar-brand-padding-y);
+  margin-right: var(--bs-navbar-brand-margin-end);
+  font-size: var(--bs-navbar-brand-font-size);
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 25px !important;
+  line-height: 20px !important;
+  font-weight: 700 !important;
+  color: #0a2a66 !important;
+}
+.navbar-nav{
+  --bs-nav-link-color: #1865f2 !important;
+  --bs-nav-link-hover-color:#0055f3 !important;
+}
+
+.nav-item{
+  color: #1865f2 !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    font-weight: 700 !important;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+  color: #0055f3 !important;
+  border-bottom: 3px solid #0055f3 !important;
+}
+
+@media (min-width: 1400px){
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1150px !important;
+}
+
+
+}
+
+@media (max-width: 720px){
+  .why-tvd{
+    margin-top: 10px;
+    /* display: none; */
+  }
+}
+
+.main-content{
+  font-size: 18px !important;
+    line-height: 30px !important;
+    margin-bottom: 20px;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.our-product-odd {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 25%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 12.1%;
+    width: 100%;
+  }
+}
+.our-product-even {
+  animation-duration: 3s;
+  animation-name: slideout;
+}
+
+@keyframes slideout {
+  from {
+    margin-right: 25%;
+    width: 300%;
+  }
+
+  to {
+    margin-right: 12.1%;
+    width: 100%;
+  }
+}
+
+
+.down-img{
+  height: 5vmin !important;
+  animation: downmove 3s;
+  animation-iteration-count: 20;
+}
+.up-img{
+  height: 5vmin !important;
+  animation: downmove 3s;
+  animation-iteration-count: 20;
+}
+
+
+@keyframes downmove {
+  from {top: -10px;}
+  to {top: 0px;}
+}

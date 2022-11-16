@@ -1,0 +1,141 @@
+import React from "react";
+import { Button } from "react-bootstrap";
+import homeimage from "../assets/img/homeimage.png";
+import cmsimg from "../assets/img/cmsimg.png";
+import dllimg from "../assets/img/dllimg.png";
+import graph from "../assets/img/graph.png";
+import support from "../assets/img/support.png";
+import trust from "../assets/img/trust.png";
+import down from "../assets/img/down.png";
+import up from "../assets/img/up.png";
+import MoreProduct from "./MoreProduct";
+const Home = () => {
+  const [show, toggleShow] = React.useState(false);
+  return (
+    <>
+      <div className="container">
+        <div className="row row-reverse">
+          <div className="col-md App-logo">
+            <img className="main-image" src={homeimage} alt="" />
+          </div>
+          <div className="col-md" style={{ margin: "auto" }}>
+            <div className="main-heading">
+              "Software is the magic thing whose importance only goes up over
+              time."
+            </div>
+            <div className="main-content">
+              A Software Developer is a professional who is charged with
+              designing and coding software for businesses and consumers alike.
+              They work closely with clients to determine what they need, then
+              use programming languages to create programs. They must have
+              critical thinking skills, as well as strong problem-solving
+              abilities.
+            </div>
+            <Button>Contact Us</Button>
+          </div>
+        </div>
+      </div>
+      <div className="why-tvd">
+        <div className="why-tvd-text">Why TVD Software</div>
+        <div className="container">
+          <div className="row">
+            <div className="col-md why-tvd-content">
+              <div className="flex-column">
+                <div>
+                  <img className="why-img" src={graph} alt="" />
+                </div>
+                <div>
+                  <div className="why-head">Lorem ipsum dolor sit amet.</div>
+                  <div className="main-content">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Mollitia tempora in voluptate iusto beatae repudiandae ab
+                    totam nobis a itaque!
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md why-tvd-content">
+              <div className="flex-column">
+                <div>
+                  <img className="why-img" src={trust} alt="" />
+                </div>
+                <div>
+                  <div className="why-head">Lorem ipsum dolor sit amet.</div>
+                  <div className="main-content">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Mollitia tempora in voluptate iusto beatae repudiandae ab
+                    totam nobis a itaque!
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md why-tvd-content">
+              <div className="flex-column">
+                <div>
+                  <img className="why-img" src={support} alt="" />
+                </div>
+                <div>
+                  <div className="why-head">Lorem ipsum dolor sit amet.</div>
+                  <div className="main-content">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Mollitia tempora in voluptate iusto beatae repudiandae ab
+                    totam nobis a itaque!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="why-tvd-text">Our Products</div>
+
+      {/* College management system */}
+      <div className="container our-product-odd">
+        <div className="row">
+          <div className="col-md App-logo">
+            <img className="main-image" src={cmsimg} alt="" />
+          </div>
+          <div className="col-md" style={{ margin: "auto" }}>
+            <div className="main-heading">"College Management System"</div>
+            <div className="main-content">
+              A college management system is a cloud based educational ERP
+              software that enables HEIs to manage online admission & fees,
+              students' attendance, library books, etc. It can also generate
+              students' performance reports & simplify the hassles of faculty.
+            </div>
+            <Button>Get Demo</Button>
+          </div>
+        </div>
+      </div>
+
+      {/* Digital language lab */}
+      <div className="container our-product-even">
+        <div className="row row-reverse">
+          <div className="col-md App-logo">
+            <img className="main-image" src={dllimg} alt="" />
+          </div>
+          <div className="col-md" style={{ margin: "auto" }}>
+            <div className="main-heading">"Digital Language Lab"</div>
+            <div className="main-content">
+              Digital language laboratory is software that make learning more
+              interactive for student. It enhances speaking, listening and
+              speaking skills. The interactive digital platform improves
+              language grammar while making learning effective and interesting.
+            </div>
+            <Button>Get Demo</Button>
+          </div>
+        </div>
+      </div>
+
+      <div>
+      {show && <div>{<MoreProduct/>}</div>}
+      <p onClick={() => toggleShow(!show)}> {show ? <><b> Less Products</b> <br /> <img alt="Less Product" className="up-img" src={up}/></> : <><img alt="More Product" className="down-img" src={down}/><br /><b> More Products</b></>}</p>    
+    </div>
+
+
+      
+    </>
+  );
+};
+
+export default Home;
