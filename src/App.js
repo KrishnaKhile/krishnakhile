@@ -12,9 +12,9 @@ import SocialIcon from './Components/SocialIcon';
 function App() {
   return (
     <div className="App">
-            {/* <NavbarMain/> */}
+            <NavbarMain/>
             <SocialIcon/>
-            {/* <Routes>
+            <Routes>
         <Route path="/" element={<Home />} />
          <Route path="/careers" element={<Careers />} />
        <Route
@@ -25,7 +25,18 @@ function App() {
           path="/contact-us"
           element={<ContactUs />}
         />
-      </Routes> */}
+         {/* <Route path="/*" element={<Page404 />} />
+        <Route path="/nestedroute/" element={<Nestedexp />}>
+          <Route path="nesabout" element={<NesAbout />} />
+          <Route path="editprofile" element={<EditProfile />} />
+          <Route path="setting" element={<Setting />} />
+          <Route
+            path="setting/EditNor/:nor_id/:nor_name/:nor_shortcode/:nor_email/:nor_mobile"
+            element={<EditNor />}
+          />
+          <Route path="muicurd" element={<MuiCurd />} />
+        </Route> */}
+      </Routes>
       <Footer/> 
     </div>
   );
