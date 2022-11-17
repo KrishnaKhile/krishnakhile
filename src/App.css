@@ -2,6 +2,13 @@
   text-align: center;
 }
 
+.navbar-main{
+  position: sticky !important;
+    top: 0;
+    background: #fff;
+    z-index: 1;
+}
+
 .App-logo {
   height: 70vmin !important;
   /* width: 50% !important; */

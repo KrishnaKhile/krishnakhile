@@ -12,7 +12,7 @@ const NavbarMain = () => {
   return (
     <>
       {["lg"].map((expand) => (
-        <Navbar collapseOnSelect key={expand} expand={expand}>
+        <Navbar className="navbar-main" collapseOnSelect key={expand} expand={expand}>
           <Container>
             <Navbar.Brand href="#home">
               <img
