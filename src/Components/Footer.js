@@ -1,59 +1,83 @@
 import React from "react";
-
+import logo from "../TVD_LOGO.png";
+import {
+  FaFacebook,
+  FaTwitter,
+  FaGoogle,
+  FaInstagram,
+  FaLinkedinIn,
+  FaGithub,
+  FaEnvelope,
+  FaPhoneAlt,
+  FaMobileAlt,
+} from "react-icons/fa";
+import { ImOffice } from "react-icons/im";
 const Footer = () => {
   return (
     <>
       <div>
         <footer
           className="text-center text-lg-start text-white"
-        //   style="background-color: #1c2331"
-          style={{backgroundColor:"#1c2332"}}
+          //   style="background-color: #1c2331"
+          style={{ backgroundColor: "#1c2332" }}
         >
           <section
-            className="d-flex justify-content-between p-4"
+            className="d-flex justify-content-between p-3"
             // style="background-color: #6351ce"
-            style={{backgroundColor:"#3f3e77"}}
+            style={{ backgroundColor: "#3f3e77" }}
           >
             <div className="me-5">
               <span>Get connected with us on social networks:</span>
             </div>
 
-            {/* <div>
-              <a href="" className="text-white me-4">
-                <i className="fab fa-facebook-f"></i>
+            <div>
+              <a href="/" className="text-white me-4">
+                <FaFacebook />
               </a>
-              <a href="" className="text-white me-4">
-                <i className="fab fa-twitter"></i>
+              <a href="/" className="text-white me-4">
+                <FaTwitter />
               </a>
-              <a href="" className="text-white me-4">
-                <i className="fab fa-google"></i>
+              <a href="/" className="text-white me-4">
+                <FaGoogle />
               </a>
-              <a href="" className="text-white me-4">
-                <i className="fab fa-instagram"></i>
+              <a href="/" className="text-white me-4">
+                <FaInstagram />
               </a>
-              <a href="" className="text-white me-4">
-                <i className="fab fa-linkedin"></i>
+              <a href="/" className="text-white me-4">
+                <FaLinkedinIn />
               </a>
-              <a href="" className="text-white me-4">
-                <i className="fab fa-github"></i>
+              <a href="/" className="text-white me-4">
+                <FaGithub />
               </a>
-            </div> */}
+            </div>
           </section>
 
           <section className="">
             <div className="container text-center text-md-start mt-5">
               <div className="row mt-3">
                 <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                  <h6 className="text-uppercase fw-bold">Company name</h6>
+                  <h6>
+                    <img
+                      style={{ height: "60px", marginRight: "6px" }}
+                      src={logo}
+                      alt="LOGO"
+                    ></img>
+                  </h6>
                   <hr
-                    className="mb-4 mt-0 d-inline-block mx-auto"
+                    className="mb-3 mt-0 d-inline-block mx-auto"
                     // style="width: 60px; background-color: #7c4dff; height: 2px"
-                    style={{width:"60px",backgroundColor:"#7c4dff",height:"2px"}}
+                    style={{
+                      width: "60px",
+                      backgroundColor: "#7c4dff",
+                      height: "2px",
+                    }}
                   />
+                  <h6 className="text-uppercase fw-bold">
+                    TVD Software Solutions
+                  </h6>
                   <p>
-                    Here you can use rows and columns to organize your footer
-                    content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit.
+                    is global software services provider offering application
+                    development and maintenance re-engeeniring and migration.
                   </p>
                 </div>
 
@@ -62,26 +86,30 @@ const Footer = () => {
                   <hr
                     className="mb-4 mt-0 d-inline-block mx-auto"
                     // style="width: 60px; background-color: #7c4dff; height: 2px"
-                    style={{width:"60px",backgroundColor:"#7c4dff",height:"2px"}}
+                    style={{
+                      width: "60px",
+                      backgroundColor: "#7c4dff",
+                      height: "2px",
+                    }}
                   />
                   <p>
                     <a href="#!" className="text-white">
-                      MDBootstrap
+                      TVD Software
                     </a>
                   </p>
                   <p>
                     <a href="#!" className="text-white">
-                      MDWordPress
+                      Krishna
                     </a>
                   </p>
                   <p>
                     <a href="#!" className="text-white">
-                      BrandFlow
+                      Krishna khile
                     </a>
                   </p>
                   <p>
                     <a href="#!" className="text-white">
-                      Bootstrap Angular
+                      React js
                     </a>
                   </p>
                 </div>
@@ -91,7 +119,11 @@ const Footer = () => {
                   <hr
                     className="mb-4 mt-0 d-inline-block mx-auto"
                     // style="width: 60px; background-color: #7c4dff; height: 2px"
-                    style={{width:"60px",backgroundColor:"#7c4dff",height:"2px"}}
+                    style={{
+                      width: "60px",
+                      backgroundColor: "#7c4dff",
+                      height: "2px",
+                    }}
                   />
                   <p>
                     <a href="#!" className="text-white">
@@ -120,20 +152,25 @@ const Footer = () => {
                   <hr
                     className="mb-4 mt-0 d-inline-block mx-auto"
                     // style="width: 60px; background-color: #7c4dff; height: 2px"
-                    style={{width:"60px",backgroundColor:"#7c4dff",height:"2px"}}
+                    style={{
+                      width: "60px",
+                      backgroundColor: "#7c4dff",
+                      height: "2px",
+                    }}
                   />
-                  {/* <p>
-                    <i className="fas fa-home mr-3"></i> New York, NY 10012, US
+                  <p>
+                    <ImOffice /> Kamala Vihar Appt., Near Paulbuddhe highschool,
+                    Pipeline Road,Savedi,Ahmednagar.
                   </p>
                   <p>
-                    <i className="fas fa-envelope mr-3"></i> info@example.com
+                    <FaEnvelope /> tvdsoftware@gmail.com
                   </p>
                   <p>
-                    <i className="fas fa-phone mr-3"></i> + 01 234 567 88
+                    <FaPhoneAlt /> +91 9325080005
                   </p>
                   <p>
-                    <i className="fas fa-print mr-3"></i> + 01 234 567 89
-                  </p> */}
+                    <FaMobileAlt /> +91 8261948910
+                  </p>
                 </div>
               </div>
             </div>
@@ -142,11 +179,11 @@ const Footer = () => {
           <div
             className="text-center p-3"
             // style="background-color: rgba(0, 0, 0, 0.2)"
-            style={{backgroundColor:"rgba(0, 0, 0, 0.2)"}}
+            style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
           >
             © 2017-2018 Copyright:
-            <a className="text-white" href="www.tvdsoftware.in">
-             TVD Software Solution
+            <a className="text-white" target="_blank" href="www.tvdsoftware.in">
+              TVD Software Solution
             </a>
           </div>
         </footer>

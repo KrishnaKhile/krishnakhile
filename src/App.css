@@ -12,14 +12,15 @@
   width: 100% !important;
   height: 100% !important;
   background: transparent !important;
+  animation: slideIn 1.5s ease-in-out forwards;
+
 }
 
 
 .why-tvd{
-  background-color: #e5e6ea;
+  background-color: #e5f6fe;
+  /* margin-top: -500px; */
   border-radius: 20px 120px 20px 120px;
-  /* height: 500px;
-  width: 100%; */
 }
 
 .why-tvd-text{
@@ -78,9 +79,44 @@
 } */
 
 .main-heading{
+  overflow: hidden;
+  height: auto;
+}
+
+.main-heading > p{
   font-family: 'Source Serif Pro', 'Noto Serif', serif !important;
   font-weight: 600 !important;
-  font-size: calc(1.300rem + 1.5vw) !important;
+  font-size: calc(1.100rem + 1.4vw) !important;
+  transform: translateY(180px);
+    animation: slideUp .8s ease forwards .5s;
+    overflow: hidden;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(9rem) scale(.2);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes expand {
+  0% {
+    transform: translateX(1400px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
 
 .App-header {
@@ -130,6 +166,7 @@
 @media (min-width: 1400px){
 .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     max-width: 1150px !important;
+   
 }
 
 
@@ -143,9 +180,26 @@
 }
 
 .main-content{
-  font-size: 18px !important;
+  height: auto;
+  overflow: hidden;
+  font-size: 16px !important;
     line-height: 30px !important;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+}
+
+.main-content > p{
+  transform: translateY(300px);
+  animation: slideUp .8s ease-in-out forwards .8s;
+}
+
+.btnc{
+  overflow: hidden !important;
+ 
+}
+
+.btn-more{
+  transform: translateY(50px);
+  animation: slideUp .8s ease-in-out  forwards 1s;
 }
 
 
@@ -160,7 +214,7 @@
 
 
 
-.our-product-odd {
+/* .our-product-odd {
   animation-duration: 3s;
   animation-name: slidein;
 }
@@ -191,7 +245,7 @@
     margin-right: 12.1%;
     width: 100%;
   }
-}
+} */
 
 
 .down-img{

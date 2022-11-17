@@ -8,10 +8,12 @@ import Careers from './Components/Careers';
 import About from './Components/About';
 import ContactUs from './Components/ContactUs';
 import Footer from './Components/Footer';
+import SocialIcon from './Components/SocialIcon';
 function App() {
   return (
     <div className="App">
             <NavbarMain/>
+            <SocialIcon/>
             <Routes>
         <Route path="/" element={<Home />} />
          <Route path="/careers" element={<Careers />} />

@@ -20,7 +20,7 @@ const NavbarMain = () => {
                 src={logo}
                 alt="LOGO"
               ></img>
-              TVD Software
+              TVD SOFTWARE
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
