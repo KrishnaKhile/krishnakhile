@@ -13,6 +13,7 @@ const Home = () => {
   const [show, toggleShow] = React.useState(false);
   return (
     <>
+    <section id="hero" class="hero d-flex align-items-center">
       <div className="container">
         <div className="row row-reverse">
           <div className="col-md App-logo">
@@ -41,13 +42,14 @@ const Home = () => {
           </div>
         </div>
       </div>
+      </section>
       <div className="why-tvd">
         <div className="why-tvd-text">Why TVD Software</div>
         <div className="container">
           <div className="row">
             <div className="col-md why-tvd-content">
               <div className="flex-column">
-                <div>
+                <div className="value">
                   <img className="why-img" src={graph} alt="" />
                 </div>
                 <div>
@@ -62,7 +64,7 @@ const Home = () => {
             </div>
             <div className="col-md why-tvd-content">
               <div className="flex-column">
-                <div>
+                <div className="value">
                   <img className="why-img" src={trust} alt="" />
                 </div>
                 <div>
@@ -77,7 +79,7 @@ const Home = () => {
             </div>
             <div className="col-md why-tvd-content">
               <div className="flex-column">
-                <div>
+                <div className="value">
                   <img className="why-img" src={support} alt="" />
                 </div>
                 <div>
@@ -99,12 +101,12 @@ const Home = () => {
       <div className="why-tvd-text">Our Products</div>
 
       {/* College management system */}
-      <div className="container our-product-odd">
+      <div  className="container aos-init aos-animate" data-aos="fade-up">
         <div className="row">
-          <div className="col-md App-logo">
+          <div className="col-md App-logo aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
             <img className="main-image" src={cmsimg} alt="" />
           </div>
-          <div className="col-md" style={{ margin: "auto" }}>
+          <div className="col-md aos-init aos-animate" style={{ margin: "auto" }} data-aos="fade-up" data-aos-delay="400">
             <div className="main-heading"><p> "College Management System"</p></div>
             <div className="main-content"><p>
               A college management system is a cloud based educational ERP
@@ -159,6 +161,10 @@ const Home = () => {
           )}
         </p>
       </div>
+
+
+
+      <div className="why-tvd-text">Our Clients</div>
     </>
   );
 };

@@ -25,6 +25,7 @@ code {
 }
 
 .social {
+  top:84px;
   position: fixed;
   right: -90px;
   z-index: 1000 !important;

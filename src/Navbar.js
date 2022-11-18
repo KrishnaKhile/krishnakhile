@@ -1,18 +1,22 @@
 import React from "react";
 import logo from "./TVD_LOGO.png";
-
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-// import NavDropdown from "react-bootstrap/NavDropdown";
-import Offcanvas from "react-bootstrap/Offcanvas";
+import {FaBars,FaArrowUp} from "react-icons/fa";
+// import Container from "react-bootstrap/Container";
+// import Nav from "react-bootstrap/Nav";
+// import Navbar from "react-bootstrap/Navbar";
+// import Offcanvas from "react-bootstrap/Offcanvas";
 import { Link, useLocation } from "react-router-dom";
 const NavbarMain = () => {
   const location = useLocation();
   return (
     <>
-      {["lg"].map((expand) => (
-        <Navbar className="navbar-main" collapseOnSelect key={expand} expand={expand}>
+      {/* {["lg"].map((expand) => (
+        <Navbar
+          classNameName="navbar-main"
+          collapseOnSelect
+          key={expand}
+          expand={expand}
+        >
           <Container>
             <Navbar.Brand href="#home">
               <img
@@ -38,11 +42,11 @@ const NavbarMain = () => {
                   TVD Software
                 </Offcanvas.Title>
               </Offcanvas.Header>
-              <Offcanvas.Body className="justify-content-end">
+              <Offcanvas.Body classNameName="justify-content-end">
                 <Nav as="ul">
                   <Nav.Item as="li">
                     <Nav.Link
-                      className={location.pathname === "/" ? "active" : ""}
+                      classNameName={location.pathname === "/" ? "active" : ""}
                       as={Link}
                       to="/"
                     >
@@ -51,7 +55,9 @@ const NavbarMain = () => {
                   </Nav.Item>
                   <Nav.Item as="li">
                     <Nav.Link
-                      className={location.pathname === "/careers" ? "active" : ""}
+                      classNameName={
+                        location.pathname === "/careers" ? "active" : ""
+                      }
                       as={Link}
                       to="/careers"
                     >
@@ -61,9 +67,7 @@ const NavbarMain = () => {
 
                   <Nav.Item as="li">
                     <Nav.Link
-                      className={
-                        location.pathname === "/about" ? "active" : ""
-                      }
+                      classNameName={location.pathname === "/about" ? "active" : ""}
                       as={Link}
                       to="/about"
                     >
@@ -72,7 +76,7 @@ const NavbarMain = () => {
                   </Nav.Item>
                   <Nav.Item as="li">
                     <Nav.Link
-                      className={
+                      classNameName={
                         location.pathname === "/contact-us" ? "active" : ""
                       }
                       as={Link}
@@ -86,8 +90,33 @@ const NavbarMain = () => {
             </Navbar.Offcanvas>
           </Container>
         </Navbar>
-      ))}
+      ))} */}
+
+<header id="header" className="header fixed-top">
+    <div className="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="/" className="logo d-flex align-items-center">
+        <img src={logo} alt="" />
+        <span>TVD SOFTWARE</span>
+      </a>
+
+      <nav id="navbar" className="navbar">
+        <ul>
+          <li><Link  className={location.pathname === "/" ? "nav-link scrollto active" : "nav-link scrollto"} to="/">Home</Link></li>
+          <li><Link className={location.pathname === "/careers" ? "nav-link scrollto active" : "nav-link scrollto"}  to="/careers">Careers</Link></li>
+          <li><a className="nav-link scrollto" href="/">About Us</a></li>
+          <li><a className="nav-link scrollto" href="/">Contact Us</a></li>
+          {/* <li><a className="nav-link scrollto" href="">Team</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a className="nav-link scrollto" href="">Contact</a></li> */}
+          
+        </ul> 
+        <FaBars className="bi mobile-nav-toggle bi-list"/>
+      </nav>
+
+    </div>
+  </header>
       <hr style={{ marginTop: "1px" }} />
+      <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i><FaArrowUp/></i></a>
     </>
   );
 };
